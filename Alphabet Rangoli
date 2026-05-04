@@ -1,0 +1,18 @@
+
+import string
+
+def print_rangoli(size):
+    # Get lowercase letters from 'a' to the size-th letter
+    alpha = string.ascii_lowercase
+    lines = []
+    
+    for i in range(size):
+        # Create a string of letters for the current row
+        s = "-".join(alpha[i:size])
+        # Mirror the string around the first character
+        line = (s[::-1] + s[1:]).center(4 * size - 3, "-")
+        lines.append(line)
+    
+    # Print the top half (reversed) and then the bottom half (excluding the duplicated center)
+    print('\n'.join(lines[::-1] + lines[1:]))
+
