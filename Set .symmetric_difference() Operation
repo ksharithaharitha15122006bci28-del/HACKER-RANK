@@ -1,0 +1,6 @@
+eng_num = int(input())
+eng_roll_no = (set(map(int,input().split())))
+fr_num = int(input())
+fr_roll_no = (set(map(int,input().split())))
+# print(len(eng_roll_no.symmetric_difference(fr_roll_no)))
+print(len(eng_roll_no^fr_roll_no))
