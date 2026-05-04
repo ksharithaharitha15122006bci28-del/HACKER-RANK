@@ -1,0 +1,9 @@
+a = int (input ())
+b = int (input ())
+c = int (input ())
+d = int (input ())
+
+a_power = (a ** b)
+c_power = (c ** d)
+ac_sum = (a_power + c_power)
+print (ac_sum)
