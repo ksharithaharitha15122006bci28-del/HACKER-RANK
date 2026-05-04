@@ -1,0 +1,3 @@
+import re
+pattern = r'[789]\d{9}'
+print('\n'.join("YES" if bool(re.fullmatch(pattern,input())) else "NO" for _ in range(int(input()))))
