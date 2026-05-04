@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    students = []
+    scores = set()
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+        scores.add(score)
+    second_lowest_score = sorted(list(scores))[1]
+    names_with_second_lowest = []
+    for name, score in students:
+        if score == second_lowest_score:
+            names_with_second_lowest.append(name)
+    for name in sorted(names_with_second_lowest):
+        print(name)
