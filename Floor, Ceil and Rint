@@ -1,0 +1,5 @@
+import numpy as np
+np.set_printoptions(legacy="1.13")
+a = np.array(input().split(), dtype=np.float64)
+for x in [np.floor, np.ceil, np.rint]:
+    print(x(a))
