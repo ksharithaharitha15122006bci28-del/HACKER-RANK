@@ -1,0 +1,9 @@
+text = list(input())
+
+impar = lambda x: x.isdigit() and int(x) % 2 == 1
+
+text.sort()
+
+text.sort(key=lambda x: (not x.islower(), not x.isupper(), not impar(x)))
+
+print("".join(text))
